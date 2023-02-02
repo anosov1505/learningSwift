@@ -42,7 +42,8 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         navigationItem.setLeftBarButton(backToMainButton, animated: true)
         someTable.dataSource = self
         someTable.delegate = self
-        self.someTable.isEditing = true
+        someTable.isEditing = true
+        someTable.allowsSelectionDuringEditing = true
         view.addSubview(someTable)
         view.addSubview(navBar)
     }
